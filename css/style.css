@@ -331,11 +331,11 @@ footer p:nth-child(2) {
     margin: 22px 10px;
     text-decoration: none;
     font-size: 20px;
+    transition: 0.3s;
 }
 
 .social a:hover {
     transform: scale(1.3);
-    transition: 0.3s;
 }
 
 .end { 
