@@ -361,6 +361,7 @@ h5 {
     height: 290px;
     background: url(../images/dark-background-abstract.png);
     background-attachment: fixed;
+    background-size: cover;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -389,6 +390,18 @@ h5 {
     background-color: transparent;
     border: 2px solid #f9004d;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-me p {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 496px) {
+    .contact-me p {
+        font-size: 20px;
+    }
 }
 
 footer {
@@ -452,4 +465,12 @@ footer p:nth-child(2) {
 
 .end a:hover {
     color: #858585;
+}
+
+@media only screen and (max-width: 768px) {
+    footer p:nth-child(2) {
+        color: white;
+        font-size: 14px;
+        width: 80%;
+    }
 }
