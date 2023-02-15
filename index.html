@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/IMG_20220930_093514_prev_ui.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Tahmid portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <!-- Hero section -->
     <div class="hero">
         <nav>
             <h2 class="logo">Portfo<span>lio</span></h2>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a class="navbar__link" href="#">Home</a></li>
+                <li><a class="navbar__link" href="#about">About Us</a></li>
+                <li><a class="navbar__link" href="#service">Services</a></li>
+                <li><a class="navbar__link" href="#">Contact Us</a></li>
             </ul>
             <a class="btn" href="#">Subscribe</a>
+            <i class="fa-solid fa-bars"></i>
         </nav>
         <div class="content">
             <h4>Hello, my name is</h4>
@@ -36,13 +41,15 @@
     </div>
 
     <!-- About section -->
-    <section  class="about">
+    <section class="about" id="about">
         <div class="main">
             <img src="images/main-img.png" alt="main-img">
             <div class="about-text">
                 <h2>About Me</h2>
                 <h5>Developer <span>& Designer</span></h5>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus possimus nam eos id, exercitationem sed soluta delectus iusto hic ipsam molestiae consequuntur et repellendus vel ducimus, cupiditate impedit quia in.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus possimus nam eos id, exercitationem
+                    sed soluta delectus iusto hic ipsam molestiae consequuntur et repellendus vel ducimus, cupiditate
+                    impedit quia in.</p>
                 <button type="button">Let's Talk</button>
             </div>
         </div>
@@ -55,37 +62,40 @@
         </div>
         <div class="box">
             <div class="card">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-building-columns"></i>
                 <h5>Web Development</h5>
                 <div class="pra">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam recusandae id 
-                        illo, in corporis excepturi est? Dolorum totam optio laboriosam pariatur dolores officia quis deserunt.
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam recusandae id
+                        illo, in corporis excepturi est? Dolorum totam optio laboriosam pariatur dolores officia quis
+                        deserunt.
                     </p>
                     <p style="text-align: center;">
                         <a class="button" href="#">Read More</a>
                     </p>
                 </div>
             </div>
-            
+
             <div class="card">
                 <i class="fa-regular fa-user"></i>
                 <h5>Web Development</h5>
                 <div class="pra">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam recusandae id 
-                        illo, in corporis excepturi est? Dolorum totam optio laboriosam pariatur dolores officia quis deserunt.
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam recusandae id
+                        illo, in corporis excepturi est? Dolorum totam optio laboriosam pariatur dolores officia quis
+                        deserunt.
                     </p>
                     <p style="text-align: center;">
                         <a class="button" href="#">Read More</a>
                     </p>
                 </div>
             </div>
-            
+
             <div class="card">
                 <i class="fa-regular fa-bell"></i>
                 <h5>Web Development</h5>
                 <div class="pra">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam recusandae id 
-                        illo, in corporis excepturi est? Dolorum totam optio laboriosam pariatur dolores officia quis deserunt.
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam recusandae id
+                        illo, in corporis excepturi est? Dolorum totam optio laboriosam pariatur dolores officia quis
+                        deserunt.
                     </p>
                     <p style="text-align: center;">
                         <a class="button" href="#">Read More</a>
@@ -104,7 +114,7 @@
     <!-- Footer section -->
     <footer>
         <p>Tahmil Ahmed</p>
-        <p>For more HTML, CSS and coding 
+        <p>For more HTML, CSS and coding
             tutorial - please click on the link bellow to subscribe to my channel:
         </p>
         <div class="social">
@@ -112,7 +122,10 @@
             <a href="https://github.com/javohirveb" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a href="https://t.me/Javohir_Toxtasinov" target="_blank"><i class="fa-brands fa-telegram"></i></a>
         </div>
-        <p class="end">CopyRight By Tahmid Ahmed</p>
+        <p class="end">CopyRight By <a href="https://github.com/javohirveb">Javohir</a></p>
     </footer>
+
+    <script src="javascript/app.js"></script>
 </body>
+
 </html>

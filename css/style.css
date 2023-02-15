@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .hero {
     height: 100vh;
     width: 100%;
@@ -39,14 +43,14 @@ nav ul li {
     padding: 10px 25px;
 }
 
-nav ul li a {
+nav ul li .navbar__link {
     color: white;
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
 }
 
-nav ul li a:hover {
+nav ul li .navbar__link:hover {
     color: #f9004d;
     transition: 0.4s;
 }
@@ -121,6 +125,69 @@ h4 {
     cursor: pointer;
 }
 
+.fa-bars {
+    display: none;
+}
+
+.top-0 {
+    top: 0;
+}
+
+.fixed {
+    position: fixed !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .fa-bars {
+        position: absolute;
+        right: 50px;
+        top: 50px;
+        display: block;
+        color: #fff;
+        font-size: 24px;
+        z-index: 11;
+        cursor: pointer;
+    }
+    .btn {
+        display: none;
+    }
+    nav ul {
+        position: fixed;
+        left: 0;
+        top: -50%;
+        width: 100%;
+        height: 50vh;
+        background: #000000c9;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        transition: all 0.4s ease-in;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+    
+    h3 {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    
+    h4 {
+        letter-spacing: 2px;
+        font-size: 16px;
+    }
+    .newslatter form {
+        width: 80%;
+        position: relative;
+    }
+}
+
+
 .about {
     width: 100%;
     padding: 100px 0px;
@@ -137,9 +204,6 @@ h4 {
 }
 
 .main {
-    width: 1130px;
-    max-width: 95%;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -185,6 +249,34 @@ button:hover {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+    .main img {
+        width: 250px;
+    }
+    .about-text {
+        text-align: center;
+        width: auto;
+        padding: 0px 20px;
+    }
+
+    .about-text h2 {
+        font-size: 35px;
+        margin-top: 10px;
+    }
+    
+    .about-text h5 {
+        font-size: 18px;
+    }
+    
+    .about-text p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
 .service {
     background: #101010;
     width: 100%;
@@ -194,7 +286,6 @@ button:hover {
 .title h2 {
     color: #fff;
     font-size: 75px;
-    width: 1130px;
     margin: 30px auto;
     text-align: center;
 }
@@ -256,10 +347,20 @@ h5 {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 768px) {
+    .box {
+        flex-direction: column;
+    }
+    .title h2 {
+        font-size: 35px;
+    }
+}
+
 .contact-me {
     width: 100%;
     height: 290px;
-    background: #191919;
+    background: url(../images/dark-background-abstract.png);
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -343,4 +444,12 @@ footer p:nth-child(2) {
     color: #f9004d;
     bottom: 35px;
     font-size: 14px;
+}
+
+.end a {
+    color: #f9004d;
+}
+
+.end a:hover {
+    color: #858585;
 }
